@@ -98,6 +98,8 @@ export default {
             if (this.$route.path !== item.path && !(this.$route.path==='/home' && (item.path==='/'))){
                 this.$router.push(item.path)
             }
+            this.$store.commit('selectMenu',item)
+            console.log(this.$store.state.tab.tableList)
         }
     },
     computed:{

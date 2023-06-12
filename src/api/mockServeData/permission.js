@@ -25,14 +25,14 @@ export default {
               name: 'mall',
               label: '商品管理',
               icon: 'video-play',
-              url: 'mall/index'
+              url: 'Mall.vue'
             },
             {
               path: '/user',
               name: 'user',
               label: '用户管理',
               icon: 'user',
-              url: 'User/index'
+              url: 'User.vue'
             },
             {
               label: '其他',
@@ -43,14 +43,14 @@ export default {
                   name: 'page1',
                   label: '页面1',
                   icon: 'setting',
-                  url: 'other/pageOne.vue'
+                  url: 'PageOne.vue'
                 },
                 {
                   path: '/page2',
                   name: 'page2',
                   label: '页面2',
                   icon: 'setting',
-                  url: 'other/pageTwo.vue'
+                  url: 'PageTwo.vue'
                 }
               ]
             }
@@ -77,7 +77,7 @@ export default {
               name: 'video',
               label: '商品管理',
               icon: 'video-play',
-              url: 'mall/index'
+              url: 'Mall.vue'
             }
           ],
           token: Mock.Random.guid(),

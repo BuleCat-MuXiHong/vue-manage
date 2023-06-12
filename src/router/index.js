@@ -1,49 +1,50 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-
-import Home from "@/Views/Home.vue";
-import User from "@/Views/User.vue";
 import Main from "@/Views/Main.vue";
-import Mall from "@/Views/Mall.vue";
-import PageOne from "@/Views/PageOne.vue"
-import PageTwo from "@/Views/PageTwo.vue"
+import Login from "@/components/Login.vue";
 
 Vue.use(VueRouter)
 
 
 //1.创建路由组件
 const routes = [
+    {
+        path: '/login',
+        component: Login,
+        name: 'login'
+    },
     //主路由
     {
         path: '/',
         component: Main,
-        redirect:'/home',
+        redirect: '/home',
+        name:'Main',
         children: [
-            {
-                path: 'home',
-                name:'home',
-                component: Home
-            },
-            {
-                path: 'user',
-                name:'user',
-                component: User
-            },
-            {
-                path: 'mall',
-                name:'mall',
-                component:Mall
-            },
-            {
-                path: 'page1',
-                name:'page1',
-                component: PageOne
-            },
-            {
-                path: 'page2',
-                name:'page2',
-                component: PageTwo
-            }
+            // {
+            //     path: 'home',
+            //     name: 'home',
+            //     component: Home
+            // },
+            // {
+            //     path: 'user',
+            //     name: 'user',
+            //     component: User
+            // },
+            // {
+            //     path: 'mall',
+            //     name: 'mall',
+            //     component: Mall
+            // },
+            // {
+            //     path: 'page1',
+            //     name: 'page1',
+            //     component: PageOne
+            // },
+            // {
+            //     path: 'page2',
+            //     name: 'page2',
+            //     component: PageTwo
+            // }
         ]
     }
 
